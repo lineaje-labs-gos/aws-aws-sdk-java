@@ -8,10 +8,10 @@
     <version>1.12.797</version>
   </parent>
   <groupId>com.amazonaws</groupId>
-  <artifactId>aws-java-sdk-dynamodb</artifactId>
+  <artifactId>aws-java-sdk-s3</artifactId>
   <version>1.12.797-lineaje-01</version>
-  <name>AWS Java SDK for Amazon DynamoDB</name>
-  <description>The AWS Java SDK for Amazon DynamoDB module holds the client classes that are used for communicating with Amazon DynamoDB Service</description>
+  <name>AWS Java SDK for Amazon S3</name>
+  <description>The AWS Java SDK for Amazon S3 module holds the client classes that are used for communicating with Amazon Simple Storage Service</description>
   <url>https://aws.amazon.com/sdkforjava</url>
 
   <!-- The dependencies section in pom.xml is auto generated. No manual changes are allowed -->
@@ -46,7 +46,7 @@
 
   <dependencies>
     <dependency>
-        <artifactId>aws-java-sdk-s3</artifactId>
+        <artifactId>aws-java-sdk-kms</artifactId>
         <groupId>com.amazonaws</groupId>
         <optional>false</optional>
         <version>${awsjavasdk.version}</version>
@@ -63,27 +63,6 @@
         <optional>false</optional>
         <scope>test</scope>
         <version>${awsjavasdk.version}</version>
-    </dependency>
-    <dependency>
-        <artifactId>junit</artifactId>
-        <groupId>junit</groupId>
-        <optional>false</optional>
-        <scope>test</scope>
-        <version>${junit.version}</version>
-    </dependency>
-    <dependency>
-        <artifactId>easymock</artifactId>
-        <groupId>org.easymock</groupId>
-        <optional>false</optional>
-        <scope>test</scope>
-        <version>${easymock.version}</version>
-    </dependency>
-    <dependency>
-        <artifactId>mockito-all</artifactId>
-        <groupId>org.mockito</groupId>
-        <optional>false</optional>
-        <scope>test</scope>
-        <version>${mockito.all.version}</version>
     </dependency>
     <dependency>
         <artifactId>jmespath-java</artifactId>
@@ -129,7 +108,7 @@
               <oldVersion>
                 <dependency>
                   <groupId>com.amazonaws</groupId>
-                  <artifactId>aws-java-sdk-dynamodb</artifactId>
+                  <artifactId>aws-java-sdk-s3</artifactId>
                   <version>RELEASE</version>
                 </dependency>
               </oldVersion>
